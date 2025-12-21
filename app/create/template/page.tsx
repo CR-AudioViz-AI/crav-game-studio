@@ -66,7 +66,6 @@ const TEMPLATES = [
     emoji: '🏎️',
     plays: 12840,
     rating: 4.6,
-    comingSoon: true,
   },
   {
     id: 'rpg',
@@ -108,7 +107,6 @@ const TEMPLATES = [
     emoji: '🏃',
     plays: 21450,
     rating: 4.7,
-    comingSoon: true,
   },
   {
     id: 'quiz',
@@ -122,7 +120,6 @@ const TEMPLATES = [
     emoji: '🧠',
     plays: 14680,
     rating: 4.6,
-    comingSoon: true,
   },
   {
     id: 'card-game',
