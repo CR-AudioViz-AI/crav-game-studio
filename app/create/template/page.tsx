@@ -79,7 +79,6 @@ const TEMPLATES = [
     emoji: '⚔️',
     plays: 9560,
     rating: 4.8,
-    comingSoon: true,
   },
   {
     id: 'tower-defense',
@@ -93,7 +92,6 @@ const TEMPLATES = [
     emoji: '🏰',
     plays: 11230,
     rating: 4.5,
-    comingSoon: true,
   },
   {
     id: 'endless-runner',
@@ -133,7 +131,6 @@ const TEMPLATES = [
     emoji: '🃏',
     plays: 8920,
     rating: 4.4,
-    comingSoon: true,
   },
   {
     id: 'idle',
@@ -147,7 +144,6 @@ const TEMPLATES = [
     emoji: '🍪',
     plays: 32100,
     rating: 4.5,
-    comingSoon: true,
   },
 ];
 
