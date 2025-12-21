@@ -136,7 +136,7 @@ export default function Match3Template() {
   }, []);
 
   // Remove matches and drop tiles
-  const processMatches = useCallback(async (currentGrid: Tile[][], currentCombo: number = 0) => {
+  const processMatches = useCallback(async (currentGrid: Tile[][], currentCombo: number = 0): Promise<Tile[][]> => {
     const matches = findMatches(currentGrid);
     
     if (matches.size === 0) {
