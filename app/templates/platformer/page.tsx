@@ -129,7 +129,6 @@ export default function PlatformerTemplate() {
 
           // Background
           const bgGraphics = this.make.graphics({ x: 0, y: 0 });
-          const gradient = bgGraphics.createLinearGradient(0, 0, 0, 600);
           bgGraphics.fillStyle(0x87CEEB);
           bgGraphics.fillRect(0, 0, 800, 600);
           // Add clouds
