@@ -23,6 +23,48 @@ export const supabaseAdmin = supabaseServiceKey
   : null;
 
 // =============================================================================
+// ECOSYSTEM CONFIG - Required for credits, payments, cross-sell
+// =============================================================================
+
+export const ECOSYSTEM_CONFIG = {
+  appId: 'game-studio',
+  appName: 'CR Game Studio',
+  
+  // Credit packages available for purchase
+  creditPackages: [
+    { id: 'starter', name: 'Starter', credits: 50, price: 4.99, popular: false },
+    { id: 'creator', name: 'Creator', credits: 150, price: 12.99, popular: true },
+    { id: 'studio', name: 'Studio', credits: 500, price: 39.99, popular: false },
+    { id: 'enterprise', name: 'Enterprise', credits: 2000, price: 149.99, popular: false },
+  ],
+  
+  // Game creation costs
+  gameCosts: {
+    createSimpleGame: 5,
+    createMediumGame: 25,
+    createComplexGame: 100,
+    generateAssets: 2,
+    publishGame: 10,
+    playPremiumGame: 2,
+  },
+  
+  // Related apps for cross-selling
+  relatedApps: [
+    { id: 'logo-studio', name: 'Logo Studio', url: 'https://crav-logo-studio.vercel.app', icon: '🎨' },
+    { id: 'scrapbook', name: 'Scrapbook', url: 'https://crav-scrapbook.vercel.app', icon: '📖' },
+    { id: 'music-builder', name: 'Music Builder', url: 'https://crav-music-builder.vercel.app', icon: '🎵' },
+  ],
+  
+  // Support contact
+  supportEmail: 'support@craudiovizai.com',
+  
+  // Payment providers
+  stripe: {
+    publicKey: process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY,
+  },
+};
+
+// =============================================================================
 // CREDIT SYSTEM
 // =============================================================================
 
@@ -35,14 +77,7 @@ export interface CreditCosts {
   playPremiumGame: number;
 }
 
-export const CREDIT_COSTS: CreditCosts = {
-  createSimpleGame: 5,
-  createMediumGame: 25,
-  createComplexGame: 100,
-  generateAssets: 2,
-  publishGame: 10,
-  playPremiumGame: 2,
-};
+export const CREDIT_COSTS: CreditCosts = ECOSYSTEM_CONFIG.gameCosts;
 
 export async function checkCredits(userId: string, amount: number): Promise<boolean> {
   const { data } = await supabase
@@ -495,6 +530,7 @@ export async function sendDiscordAlert(embed: {
 export default {
   supabase,
   supabaseAdmin,
+  ECOSYSTEM_CONFIG,
   CREDIT_COSTS,
   checkCredits,
   deductCredits,
