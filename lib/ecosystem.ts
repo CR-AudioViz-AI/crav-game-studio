@@ -50,14 +50,14 @@ export const ECOSYSTEM_CONFIG = {
   
   // CR AudioViz AI Product Ecosystem (for cross-selling)
   products: [
-    { id: 'javari', name: 'Javari AI', description: 'Your AI Assistant', url: 'https://javariai.com', icon: '🤖', color: 'from-purple-500 to-indigo-600' },
-    { id: 'scrapbook', name: 'Scrapbook', description: 'Digital Memories', url: 'https://crav-scrapbook.vercel.app', icon: '📖', color: 'from-pink-500 to-rose-600' },
-    { id: 'logo-studio', name: 'Logo Studio', description: 'AI Logo Design', url: 'https://crav-logo-studio.vercel.app', icon: '🎨', color: 'from-orange-500 to-amber-600' },
-    { id: 'music-builder', name: 'Music Builder', description: 'Create Beats', url: 'https://crav-music-builder.vercel.app', icon: '🎵', color: 'from-green-500 to-emerald-600' },
-    { id: 'ebook-creator', name: 'eBook Creator', description: 'Publish Stories', url: 'https://crav-ebook-creator.vercel.app', icon: '📚', color: 'from-blue-500 to-cyan-600' },
-    { id: 'market-oracle', name: 'Market Oracle', description: 'AI Trading Insights', url: 'https://crav-market-oracle.vercel.app', icon: '📈', color: 'from-emerald-500 to-teal-600' },
-    { id: 'cardverse', name: 'CardVerse', description: 'Trading Cards', url: 'https://cravcards.com', icon: '🃏', color: 'from-violet-500 to-purple-600' },
-    { id: 'barrels', name: 'BarrelVerse', description: 'Spirits Discovery', url: 'https://cravbarrels.com', icon: '🥃', color: 'from-amber-500 to-orange-600' },
+    { id: 'javari', name: 'Javari AI', desc: 'Your AI Assistant', url: 'https://javariai.com', icon: '🤖', color: 'from-purple-500 to-indigo-600' },
+    { id: 'scrapbook', name: 'Scrapbook', desc: 'Digital Memories', url: 'https://crav-scrapbook.vercel.app', icon: '📖', color: 'from-pink-500 to-rose-600' },
+    { id: 'logo-studio', name: 'Logo Studio', desc: 'AI Logo Design', url: 'https://crav-logo-studio.vercel.app', icon: '🎨', color: 'from-orange-500 to-amber-600' },
+    { id: 'music-builder', name: 'Music Builder', desc: 'Create Beats', url: 'https://crav-music-builder.vercel.app', icon: '🎵', color: 'from-green-500 to-emerald-600' },
+    { id: 'ebook-creator', name: 'eBook Creator', desc: 'Publish Stories', url: 'https://crav-ebook-creator.vercel.app', icon: '📚', color: 'from-blue-500 to-cyan-600' },
+    { id: 'market-oracle', name: 'Market Oracle', desc: 'AI Trading Insights', url: 'https://crav-market-oracle.vercel.app', icon: '📈', color: 'from-emerald-500 to-teal-600' },
+    { id: 'cardverse', name: 'CardVerse', desc: 'Trading Cards', url: 'https://cravcards.com', icon: '🃏', color: 'from-violet-500 to-purple-600' },
+    { id: 'barrels', name: 'BarrelVerse', desc: 'Spirits Discovery', url: 'https://cravbarrels.com', icon: '🥃', color: 'from-amber-500 to-orange-600' },
   ],
   
   // Related apps for cross-selling (legacy)
@@ -69,12 +69,12 @@ export const ECOSYSTEM_CONFIG = {
   
   // Support categories
   supportCategories: [
-    { id: 'bug', name: 'Report a Bug', description: 'Something not working correctly?', icon: '🐛' },
-    { id: 'feature', name: 'Feature Request', description: 'Have an idea for improvement?', icon: '💡' },
-    { id: 'help', name: 'Need Help', description: 'Questions about using the app?', icon: '❓' },
-    { id: 'billing', name: 'Billing Issue', description: 'Payment or subscription questions?', icon: '💳' },
-    { id: 'account', name: 'Account Issue', description: 'Login or account problems?', icon: '👤' },
-    { id: 'other', name: 'Other', description: 'Something else on your mind?', icon: '📝' },
+    { id: 'bug', name: 'Report a Bug', desc: 'Something not working correctly?', icon: '🐛' },
+    { id: 'feature', name: 'Feature Request', desc: 'Have an idea for improvement?', icon: '💡' },
+    { id: 'help', name: 'Need Help', desc: 'Questions about using the app?', icon: '❓' },
+    { id: 'billing', name: 'Billing Issue', desc: 'Payment or subscription questions?', icon: '💳' },
+    { id: 'account', name: 'Account Issue', desc: 'Login or account problems?', icon: '👤' },
+    { id: 'other', name: 'Other', desc: 'Something else on your mind?', icon: '📝' },
   ],
   
   // Support contact
